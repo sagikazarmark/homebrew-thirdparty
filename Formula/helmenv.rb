@@ -8,7 +8,7 @@ class Helmenv < Formula
 
     bottle :unneeded
 
-    conflicts_with "helm", :because => "helmenv symlinks helm binaries"
+    conflicts_with "kubernetes-helm", :because => "helmenv symlinks helm binaries"
 
     def install
         prefix.install ["bin", "libexec"]
