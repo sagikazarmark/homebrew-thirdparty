@@ -14,6 +14,11 @@ class Helmenv < Formula
         prefix.install ["bin", "libexec"]
     end
 
+    def caveats
+        "Add the following to your .bashrc/.zshrc:"
+        "    export HELMENV_ROOT=/usr/local/Cellar/helmenv/master"
+    end
+
     test do
         system bin/"helmenv", "versions"
     end
