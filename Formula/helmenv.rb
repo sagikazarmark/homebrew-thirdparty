@@ -4,6 +4,7 @@ class Helmenv < Formula
     url "https://github.com/yuya-takeyama/helmenv/archive/master.tar.gz"
     sha256 "82b89341275f64b099ce0fd902456d94a9a59640b9014d4f0ba5263e2066edce"
     head "https://github.com/yuya-takeyama/helmenv.git"
+    version "master"
 
     bottle :unneeded
 
