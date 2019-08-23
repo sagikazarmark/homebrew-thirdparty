@@ -15,8 +15,10 @@ class Helmenv < Formula
     end
 
     def caveats
-        "Add the following to your .bashrc/.zshrc:
-    export HELMENV_ROOT=/usr/local/Cellar/helmenv/master"
+        <<~EOS
+        Add the following to your .bashrc/.zshrc:
+            export HELMENV_ROOT=/usr/local/Cellar/helmenv/master
+        EOS
     end
 
     test do
