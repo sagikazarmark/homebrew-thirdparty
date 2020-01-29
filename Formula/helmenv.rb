@@ -1,8 +1,8 @@
 class Helmenv < Formula
     desc "Helm version manager inspired by rbenv"
     homepage "https://github.com/yuya-takeyama/helmenv"
-    url "https://github.com/yuya-takeyama/helmenv/archive/master.tar.gz"
-    sha256 "82b89341275f64b099ce0fd902456d94a9a59640b9014d4f0ba5263e2066edce"
+    url "https://github.com/yuya-takeyama/helmenv/archive/18ef747.tar.gz"
+    sha256 "aac2725513f64f960aa59662e5d1acce76707eb1042da326439558d85cf69e6f"
     head "https://github.com/yuya-takeyama/helmenv.git"
     version "master"
 
@@ -12,13 +12,6 @@ class Helmenv < Formula
 
     def install
         prefix.install ["bin", "libexec"]
-    end
-
-    def caveats
-        <<~EOS
-        Add the following to your .bashrc/.zshrc:
-            export HELMENV_ROOT=/usr/local/Cellar/helmenv/master
-        EOS
     end
 
     test do
